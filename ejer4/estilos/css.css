@@ -1,0 +1,103 @@
+body /* Este es el CSS del BODY */
+{
+    background-color: #333;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+p /* Este es el CSS de los parrafos (P) */
+{
+    margin-left: 1%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Aqui empiezan los CSS de los DIV */
+div.lista
+{
+    background-color: #333;
+    float: left;
+    border-style: solid;
+    border: 0;
+    border-color: black;
+    width: 20%;
+    height: 100%;
+    overflow: scroll;
+}
+
+div.contenido
+{
+    background-color: white; /* Este comando establece el color de fonde del DIV, se puede poner el color o el codigo hexadecimal */
+    float: left; /* Este comando establece la posición del DIV */
+    border-style: solid; /* Este comando establece el estilo del borde del DIV */
+    border: 0; /* Este comando establece el grosor del border del DIV */
+    border-color: black; /* Este comando establece el color del borde del DIV */
+    width: 79%; /* Este comando establece la anchira del DIV en la pagina */
+    height: 100%; /* Este comando establece la altura del DIV en la página */
+    margin-left: 0.75%; /* Este comando establece un margen a la izquierda */
+    overflow: scroll; /* Este comando muestra las barras de desplazamiento horizontal y vertical*/
+
+}
+/* Aqui terminan los CSS de los DIV */
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Aqui es donde empieza el CSS de la lista de estilo acordeón. */
+ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 13px;
+font-weight: bold;
+}
+ul.acorh li {
+list-style: none;
+}
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 15px;
+background: #333;
+color: #eee;
+border-bottom: 1px solid #000;
+border-top: 1px solid #666;
+text-decoration: none;
+box-sizing: border-box;
+
+
+}
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #999;
+color: #000;
+font-size: 13px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+ul.acorh li a:hover {
+background: #667;
+color: #ffd;
+}
+/* Aqui es donde termina el CSS de la lista de estilo acordeón. */
